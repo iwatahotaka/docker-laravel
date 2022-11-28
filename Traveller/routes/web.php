@@ -24,27 +24,27 @@ Route::get('/home', 'HomeController@index')->name('home');
 /* view作成用の仮のルーティング */
 
 Route::get('/top', function () {
-    return view('top');
+    return view('posts.top');
 });
 
 Route::get('/create', function () {
-    return view('create');
+    return view('posts.create');
 });
 
 Route::get('/edit', function () {
-    return view('edit');
+    return view('posts.edit');
 });
 
 Route::get('/mypage', function () {
-    return view('mypage');
+    return view('posts.mypage');
 });
 
-Route::get('/post', function () {
-    return view('post');
+Route::get('/index', function () {
+    return view('posts.index');
 });
 
 Route::get('/show', function () {
-    return view('show');
+    return view('posts.show');
 });
 
 Route::get('/header', function () {
