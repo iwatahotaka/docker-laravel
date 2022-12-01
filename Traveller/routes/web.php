@@ -54,3 +54,8 @@ Route::get('/header', function () {
 Route::get('/commentCreate', function () {
     return view('commentCreate');
 });
+
+// 以下、コントローラーを通した本格的なルーティング
+//開発中に上記のview確認用のルートと同じURLを指定する場合は、その部分に該当する箇所をコメントアウトしておいて下さい！
+
+// Route::get('/posts', 'PostController@index')->name('posts.index');
