@@ -51,6 +51,12 @@ Route::get('/header', function () {
     return view('layouts/app');
 });
 
-Route::get('/commentCreate', function () {
-    return view('commentCreate');
-});
+// Route::get('/commentCreate', function () {
+//     return view('commentCreate');
+// });
+
+// // comments create : コメント(表示)
+Route::get('/comment/create/{post_id}', 'CommentController@create')->name('comment.create');
+
+// // comments create : コメント(保存)
+Route::post('/comment/store', 'CommentController@store')->name('comment.store');
