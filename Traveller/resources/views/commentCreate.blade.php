@@ -20,6 +20,9 @@
             </div>
         </section>
 
+        {{-- 投稿IDを取得してどの投稿に対してのコメントなのかを判断 --}}
+        <input type="hidden" name="id" value="<?= $post['id'] ?>">
+
         {{-- コメントボタン --}}
         <div class="comment-button">
             <img class="comment-icon" src="images/comment-icon.png" alt="">
