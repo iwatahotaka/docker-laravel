@@ -15,7 +15,7 @@ class CommentController extends Controller
     public function create($post_id)
     {
         // dd($post_id);
-        return view("comment.create", ["post_id" => $post_id]);
+        return view("commentCreate", ["post_id" => $post_id]);
     }
 
     public function store(Request $request)
@@ -39,7 +39,7 @@ class CommentController extends Controller
         $comment->save();
 
         //showページへリダイレクト
-        return redirect()->route("comment.store", Post::find($comment->post_id)->user_id);
+        return redirect()->route("show", Post::find($comment->post_id)->user_id);
 
     }
 

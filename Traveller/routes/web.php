@@ -56,7 +56,7 @@ Route::get('/header', function () {
 // });
 
 // // comments create : コメント(表示)
-Route::get('/comment/create/{post_id}', 'CommentController@create')->name('comment.create');
+Route::get('/comment/create/{post_id}', 'CommentController@create')->name('commentCreate');
 
 // // comments create : コメント(保存)
 Route::post('/comment/store', 'CommentController@store')->name('comment.store');
