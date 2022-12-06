@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
-
 namespace App\Http\Controllers;
+
 
 use Illuminate\Http\Request;
 use App\Comment;
@@ -15,7 +14,7 @@ class CommentController extends Controller
     public function create($post_id)
     {
         // dd($post_id);
-        return view("commentCreate", ["post_id" => $post_id]);
+        return view("comments.create", ["post_id" => $post_id]);
     }
 
     public function store(Request $request)
