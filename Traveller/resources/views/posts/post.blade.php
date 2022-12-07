@@ -16,7 +16,12 @@
             <img src="{{ asset('images/country_img/' . $post->image_1) }}" onclick="image_change()" alt="画像" width="240" height="135" id="image_change">
             {{-- <script>
                 var img_1 = {{ asset('images/country_img/' . $post->image_1) }};
-                var img_src = new Array(img_1,{{ asset('images/country_img/' . $post->image_2) }}”,”{{ asset('images/country_img/' . $post->image_3) }}”,”{{ asset('images/country_img/' . $post->image_4) }}”,”{{ asset('images/country_img/' . $post->image_5) }}”);
+                var img_2 = {{ asset('images/country_img/' . $post->image_2) }};
+                var img_3 = {{ asset('images/country_img/' . $post->image_3) }};
+                var img_4 = {{ asset('images/country_img/' . $post->image_4) }};
+                var img_5 = {{ asset('images/country_img/' . $post->image_5) }}”
+                
+                var img_src = new Array(img_1,img_2,img_3,img_4,img_5);
                 var i = 0;
 
                 function image_change() {
