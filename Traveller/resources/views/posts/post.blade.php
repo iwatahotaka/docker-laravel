@@ -1,7 +1,11 @@
 @extends('layouts/app')
 <head>
-    <link rel="stylesheet" href="{{ asset('/css/post.css') }}">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="{{ asset('css/post.css') }}" rel="stylesheet" >
+    {{-- <link rel="stylesheet" href="{{ asset('css/post.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    --}}
     {{-- <script type="text/javascript" src="post.js"></script> --}}
 </head>
 @section('content')
@@ -37,6 +41,7 @@
             <label for="post-readmore" class="post-readmore-btn" style="opacity:0.5">read more</label>
             <div class="post-readmore-text">{{ $post->caption }}</div>
         </div>
+        <br>
         <div class="Likes-button">
             
             @if($post->likedBy(Auth::user())->count() > 0)
